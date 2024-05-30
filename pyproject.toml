@@ -1,0 +1,26 @@
+[project]
+name = "my-docs"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Richard-xx", email = "richard@arducam.com" }
+]
+dependencies = [
+    "mkdocs>=1.5.3",
+    "mkdocs-material>=9.5.17",
+    "mike>=2.0.0",
+    "jieba>=0.42.1",
+    "opencv-python>=4.9.0.80",
+    "depthai>=2.25.0.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[tool.rye]
+managed = true
+virtual = true
+dev-dependencies = []
+
+[[tool.rye.sources]]
+name = "pypi"
+url = "https://pypi.org/simple"
