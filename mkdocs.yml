@@ -1,4 +1,10 @@
-site_name: My Docs
+site_name: My OAK Docs
+site_url: https://richard-xx.github.io/oak_custom_doc/.
+
+# Repository
+repo_name: richard-xx/oak_custom_doc
+repo_url: https://github.com/richard-xx/oak_custom_doc
+
 theme:
   name: material
   features:
