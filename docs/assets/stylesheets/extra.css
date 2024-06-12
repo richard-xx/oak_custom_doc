@@ -1,0 +1,7 @@
+@import url('../fonts/lxgwwenkaiscreen/result.css');
+@import url('../fonts/MapleMono/style.css');
+
+:root {
+  --md-text-font: "LXGW WenKai Screen";
+  --md-code-font: "Maple Mono";
+}
