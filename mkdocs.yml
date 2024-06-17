@@ -1,5 +1,6 @@
 site_name: My OAK Docs
 site_url: https://richard-xx.github.io/oak_custom_doc
+edit_uri: /blob/main/docs/
 
 # Repository
 repo_name: richard-xx/oak_custom_doc
@@ -53,15 +54,10 @@ markdown_extensions:
   - abbr
   - admonition
   - attr_list
-  - toc:
-      permalink: true
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
+  - def_list
   - footnotes
   - md_in_html
   - meta
-  - def_list
   - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
@@ -89,6 +85,11 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.tilde
   - tables
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 
 plugins:
   - search:
@@ -98,7 +99,7 @@ nav:
   - Home: index.md
   - Oak:
 #      - Camera: "oak/camera/camera_viewer.md"
-      - Pointcloud: "oak/pointcloud/point_cloud_viewer.md"
+      - PointCloud: "oak/pointcloud/point_cloud_viewer.md"
       - Depth: "oak/depth/depth_viewer.md"
       - Depth LR: "oak/depth/depth_viewer_lr.md"
-  - Yolo: "oak/yolo/depthai_yolo.md"
+  - Yolo: https://richard-xx.github.io/DepthAI_Yolo/
