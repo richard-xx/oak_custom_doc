@@ -15,11 +15,8 @@ dependencies = [
 readme = "README.md"
 requires-python = ">= 3.8"
 
-[tool.rye]
-managed = true
-virtual = true
-dev-dependencies = []
+[project.optional-dependencies]
+pcl = [
+    "open3d",
+]
 
-[[tool.rye.sources]]
-name = "pypi"
-url = "https://pypi.org/simple"
